@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 
 #APP TITLE
--
+
 st.title("Global Development Clustering Dashboard")
 st.write("""
 This app groups countries based on key development indicators like **GDP**, 
@@ -91,7 +91,7 @@ sns.scatterplot(
 plt.title(f"Clusters based on {x_axis} and {y_axis}")
 st.pyplot(fig)
 
--
+
 # CLUSTER STATISTICS
 
 st.subheader("Cluster Summary")
@@ -123,4 +123,5 @@ if st.button("Save Model"):
     st.success("Model saved as kmeans_model.pkl")
 
 st.success("App Ready! Run it using: streamlit run app.py")
+
 
